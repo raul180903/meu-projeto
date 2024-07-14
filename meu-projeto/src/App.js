@@ -1,26 +1,24 @@
 import './App.css';
-import DigaMeuNome from './componentes/DigaMeuNome';
-import Marcas from './componentes/Marcas'
-import Pessoa from './componentes/Pessoa'
+import MeuProjeto from './componentes/MeuProjeto'
 
 function App() {
-
-  const nome = "Felipe"
-  const carro2 = "Mercedes"
-  const esporte = "Fórmula 1"
-  const roupa = "Nike"
-
+  /*nome normal*/
+  var name = "Raul de Souza"
+  const MinhaIdade = 20
+  
+  /*continha de +*/
+function sum(a, b) {
+   return (a + b)
+}
+  const url = "https://via.placeholder.com/150/blue"
 
   return (
     <div className="App">
-      <DigaMeuNome nome="Raul" nomenamorada= "Ellen"/>
-      <Marcas carro1 = "Ferrari" carro2={carro2} esporte={esporte} roupa={roupa}/>
-      <Pessoa  
-        nome = "Raul"
-        idade = "20"
-        profissão = "Programador Web"
-        foto ="https://via.placeholder.com/150x150>"
-      />    
+      <h1>Meu nome eh {name} e tenho {MinhaIdade} anos.</h1>
+      <img src={url} alt="Minha imagem" />
+      <MeuProjeto/>
+      <h1>A soma entre 47 + 58 é igual á {sum(47, 58)}</h1>
+      
     </div>
   )
 }
